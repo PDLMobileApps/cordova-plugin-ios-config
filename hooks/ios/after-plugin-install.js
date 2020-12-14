@@ -21,7 +21,8 @@ const stringToInsert = "\
     if (infoRemoteNotif) {\n\
         [[NSUserDefaults standardUserDefaults] setObject:infoRemoteNotif forKey:@\"backgroundNotification\"];\n\
         [[NSUserDefaults standardUserDefaults] synchronize];\n\
-    }\n\n";
+    }\n\
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;\n\n";
 
 
 function jsonLog(params) {
